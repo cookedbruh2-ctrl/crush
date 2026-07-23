@@ -1,1 +1,0 @@
-crush installer upload test via contents API
