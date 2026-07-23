@@ -1,7 +1,7 @@
 {
     "$schema": "https://schema.tauri.app/config/2",
     "productName": "crush",
-    "version": "0.4.1",
+    "version": "0.5.0",
     "identifier": "com.mally.crush",
     "build": {
         "beforeDevCommand": "bun run dev",
@@ -43,7 +43,9 @@
             "csp": null,
             "assetProtocol": {
                 "enable": true,
-                "scope": ["$APPDATA/**"]
+                "scope": [
+                    "$APPDATA/**"
+                ]
             }
         }
     },
@@ -61,12 +63,9 @@
         "resources": [
             "./resources/**/*.png",
             "./resources/locales/**/*.json",
-
             "./resources/tortellini.jpg",
-
             "./resources/icon.ico",
             "./open_game.bat",
-
             "./libraries/vcruntime140.dll",
             "./libraries/vcruntime140_1.dll"
         ]
@@ -74,25 +73,28 @@
     "plugins": {
         "deep-link": {
             "desktop": {
-                "schemes": ["roblox", "roblox-player"]
+                "schemes": [
+                    "roblox",
+                    "roblox-player"
+                ]
             }
         },
-        "cli" : {
+        "cli": {
             "description": "CLI part for using shortcuts",
             "args": [
                 {
-                    "short" : "l",
-                    "name" : "launch",
-                    "description" : "Launch the game with the specified place id",
-                    "takesValue" : true,
-                    "required" : false
+                    "short": "l",
+                    "name": "launch",
+                    "description": "Launch the game with the specified place id",
+                    "takesValue": true,
+                    "required": false
                 },
                 {
-                    "short" : "d",
-                    "name" : "deeplink",
-                    "description" : "Use deeplink.",
+                    "short": "d",
+                    "name": "deeplink",
+                    "description": "Use deeplink.",
                     "takesValue": true,
-                    "required" : false
+                    "required": false
                 }
             ]
         },

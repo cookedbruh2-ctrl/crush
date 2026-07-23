@@ -1,6 +1,6 @@
 {
     "name": "crush",
-    "version": "0.1.0",
+    "version": "0.5.0",
     "description": "",
     "type": "module",
     "scripts": {
@@ -13,7 +13,8 @@
         "clean": "cd ./src-tauri && cargo clean",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "tauri": "tauri"
+        "tauri": "tauri",
+        "build:installer": "bash scripts/build-windows-installer.sh"
     },
     "license": "GPL-3.0-only",
     "dependencies": {

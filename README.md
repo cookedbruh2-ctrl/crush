@@ -16,6 +16,15 @@ Crush is a Roblox bootstrapper written from scratch, inspired by many other boot
 Crush is now available! You can download it from the latest release.
 Built with **Tauri + Svelte**.
 
+### Windows installer
+
+Download the individual Windows x64 setup from the [latest release](https://github.com/cookedbruh2-ctrl/crush/releases/latest) or from [`dist/crush_0.5.0_x64-setup.exe`](./dist/crush_0.5.0_x64-setup.exe).
+
+```bash
+# rebuild the standalone Windows installer (requires Zig)
+npm run build:installer
+```
+
 ## Features
 
 * Not a Bloxstrap fork

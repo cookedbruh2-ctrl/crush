@@ -12,3 +12,6 @@ vite.config.ts.timestamp-*
 ~/.tauri/crush.key.pub
 .tauri/crush.key
 .tauri/crush.key.pub
+dist/*.obj
+installer/assets/
+*.obj
